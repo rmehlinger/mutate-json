@@ -1,0 +1,19 @@
+{
+  "name": "mutate-json",
+  "version": "0.0.0",
+  "description": "provides a set of operations for mutating a deep JSON object",
+  "main": "dist/main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/rmehlinger/mutate-json"
+  },
+  "keywords": [
+    "JSON",
+    "lodash"
+  ],
+  "author": "Richard Mehlinger",
+  "license": "Apache-2.0"
+}
