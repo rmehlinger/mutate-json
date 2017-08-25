@@ -126,7 +126,7 @@ let operations = {
   }
 };
 
-exports.default = function ({path, operation, operand}, target) {
+export default function ({path, operation, operand}, target) {
   let original = deepGet(target, path);
   if(operations[operation]) {
     operations[operation](original, target, path, operand)
@@ -134,4 +134,5 @@ exports.default = function ({path, operation, operand}, target) {
   else {
     throw Error(`Unrecognized operation ${operation}`);
   }
+  return original;
 };
