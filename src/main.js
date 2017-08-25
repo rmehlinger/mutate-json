@@ -126,7 +126,7 @@ let operations = {
   }
 };
 
-export default function ({path, operation, operand}, target) {
+export default function (target, {path, operation, operand}) {
   let original = deepGet(target, path);
   if(operations[operation]) {
     operations[operation](original, target, path, operand)

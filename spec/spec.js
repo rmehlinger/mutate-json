@@ -10,9 +10,9 @@ describe('Deep Mutation', () => it('should work', () => {
       num: 100
     }
   };
-  mutate({path: ['int'], operation: '+', operand: 1}, testObj);
+  mutate(testObj, {path: ['int'], operation: '+', operand: 1});
   expect(testObj.int).toBe(2);
-  mutate({path: 'subfield.list', operation: 'push', operand: 3}, testObj);
+  mutate(testObj, {path: 'subfield.list', operation: 'push', operand: 3});
   expect(testObj.subfield.list[2]).toEqual(3);
 }));
 
